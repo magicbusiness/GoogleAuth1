@@ -1,0 +1,13 @@
+To use Google Auth Verification
+1. Enable Google in Auth in Firebase and type your email in project support email
+2. Add Finger Print, Then Input SHA1 or SHA256 in gradle menu in top right android studio
+   Choose Gradle Name Project -> Task -> Android -> SigningReport then copy SHA1 or SHA256
+   Input SHA to certification fingger print and save
+3. Implement Dependencies for Google Sign In
+   ( implementation 'com.google.firebase:firebase-auth-ktx' ) 			// Auth
+   ( implementation 'com.google.android.gms:play-services-auth:19.0.0' ) 	// Google Sign In
+
+4. Then Implement Auth and Google Sign In
+
+Note: If default_web_client_id not resolved you must add it manual
+	Go to Authnetication -> Sign-In -> Click Google -> Web SDK Configuration -> Copy Web Client ID to String Value
